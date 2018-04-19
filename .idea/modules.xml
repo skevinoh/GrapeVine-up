@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GrapeVine.iml" filepath="$PROJECT_DIR$/GrapeVine.iml" />
       <module fileurl="file://$PROJECT_DIR$/GrapeVine-master.iml" filepath="$PROJECT_DIR$/GrapeVine-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/GrapeVine-up.iml" filepath="$PROJECT_DIR$/.idea/GrapeVine-up.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

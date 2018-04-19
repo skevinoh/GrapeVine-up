@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -45,13 +46,19 @@ public class GrapeAdpater extends BaseAdapter{
             convertView = mInflater.inflate(R.layout.activity_home_items, parent, false);
             holder = new ViewHolder();
             holder.homeItemTextView = convertView.findViewById(R.id.home_item_textview);
+            holder.postsEditText = convertView.findViewById(R.id.postsEditText);
             convertView.setTag(holder);
         }else{
             holder = (ViewHolder) convertView.getTag();
         }
+        TextView homeItemTextView = holder.homeItemTextView;
+        EditText postsEditText = holder.postsEditText;
+        homeItemTextView.setText(postsEditText.getText());
         return convertView;
     }
+
     private static class ViewHolder{
         public TextView homeItemTextView;
+        public EditText postsEditText;
     }
 }
