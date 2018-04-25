@@ -12,7 +12,7 @@
         android:layout_marginTop="89dp"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:text="Stuff"/>
+        android:hint="What would you like to say?"/>
 
     <Button
         android:id="@+id/onClickSubmitPostBtn"
@@ -24,12 +24,14 @@
         android:onClick="onClickSubmitPost"
         android:text="Post" />
 
-    <TextView
-        android:id="@+id/dummyTextView"
+
+
+    <EditText
+        android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/onClickSubmitPostBtn"
-        android:layout_marginTop="202dp"
-        android:text="TextView" />
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Restaurant" />
 </RelativeLayout>

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GrapeVine.iml" filepath="$PROJECT_DIR$/GrapeVine.iml" />
-      <module fileurl="file://$PROJECT_DIR$/GrapeVine-master.iml" filepath="$PROJECT_DIR$/GrapeVine-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/GrapeVine-up.iml" filepath="$PROJECT_DIR$/.idea/GrapeVine-up.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GrapeVine-up.iml" filepath="$PROJECT_DIR$/GrapeVine-up.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

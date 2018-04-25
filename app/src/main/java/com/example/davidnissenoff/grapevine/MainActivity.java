@@ -17,7 +17,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity  {
 
 private GoogleSignInClient mGoogleSignInClient;
     Button mSignIn;
@@ -30,27 +30,6 @@ private GoogleSignInClient mGoogleSignInClient;
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestEmail()
-                .build();
-        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-
-
-    }
-    @Override
-    public void onClick(View v){
-        mContext = this;
-        mSignIn = findViewById(R.id.sign_in_button);
-        mUsername = findViewById(R.id.username_edit_text);
-        mPassword = findViewById(R.id.password_edit_text);
-        mSignIn.setOnClickListener(this);
-        switch (v.getId()) {
-            case R.id.sign_in_button:
-                signIn();
-    }}
-    private void signIn() {
-        Intent signInIntent = mGoogleSignInClient.getSignInIntent();
-        startActivityForResult(signInIntent,0);
     }
     public void onClickStart(View view){
         Intent intent = new Intent(getApplicationContext(), HomePage.class);

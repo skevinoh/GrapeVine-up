@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -46,19 +47,27 @@ public class GrapeAdpater extends BaseAdapter{
             convertView = mInflater.inflate(R.layout.activity_home_items, parent, false);
             holder = new ViewHolder();
             holder.homeItemTextView = convertView.findViewById(R.id.home_item_textview);
+            holder.foodTextView = convertView.findViewById(R.id.eat_textview);
+            holder.PriceTextView = convertView.findViewById(R.id.price_textView);
+            holder.foodImageView = convertView.findViewById(R.id.food_image_view);
             holder.postsEditText = convertView.findViewById(R.id.postsEditText);
             convertView.setTag(holder);
         }else{
             holder = (ViewHolder) convertView.getTag();
         }
+        SubmitPosts post = (SubmitPosts) getItem(position);
         TextView homeItemTextView = holder.homeItemTextView;
         EditText postsEditText = holder.postsEditText;
-        homeItemTextView.setText(postsEditText.getText());
+
+        //homeItemTextView.setText(post.postThing);
         return convertView;
     }
 
     private static class ViewHolder{
         public TextView homeItemTextView;
+        public TextView foodTextView;
+        public TextView PriceTextView;
+        public ImageView foodImageView;
         public EditText postsEditText;
     }
 }

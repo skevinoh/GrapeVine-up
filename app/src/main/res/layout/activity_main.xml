@@ -7,23 +7,13 @@
     tools:context="com.example.davidnissenoff.grapevine.MainActivity">
 
 
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/sign_in_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="72dp"
-        />
-
     <Button
         android:id="@+id/sign_up_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/sign_in_button"
-        android:layout_alignTop="@+id/sign_in_button"
-        android:layout_marginTop="72dp"
+        android:layout_centerInParent="true"
         android:onClick="onClickStart"
-        android:text="Sign up" />
+        android:text="Sign In" />
 
     <EditText
         android:id="@+id/username_edit_text"

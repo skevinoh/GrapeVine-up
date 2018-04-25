@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/home_item_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="83dp"
-        android:text="TextView" />
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="66dp"
+        android:text="SamplePost" />
+
+    <ImageView
+        android:id="@+id/food_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="76dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/price_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/home_item_textview"
+        android:layout_marginTop="94dp"
+        android:text="PricePoint" />
+
+    <TextView
+        android:id="@+id/eat_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/home_item_textview"
+        android:layout_marginTop="121dp"
+        android:text="WhatEat" />
 </RelativeLayout>
