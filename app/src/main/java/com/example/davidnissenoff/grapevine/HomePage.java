@@ -44,6 +44,8 @@ public class HomePage extends AppCompatActivity {
             ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, strings);
             arrayAdapter.notifyDataSetChanged();
             mListView.setAdapter(arrayAdapter);
+            ArrayList<SubmitPosts> submitPosts = new ArrayList<>();
+            
 
 
            /* mListView = findViewById(R.id.posts_list_view);

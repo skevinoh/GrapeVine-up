@@ -11,6 +11,10 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 /**
@@ -48,7 +52,7 @@ public class GrapeAdpater extends BaseAdapter{
             holder = new ViewHolder();
             holder.homeItemTextView = convertView.findViewById(R.id.home_item_textview);
             holder.foodTextView = convertView.findViewById(R.id.eat_textview);
-            holder.PriceTextView = convertView.findViewById(R.id.price_textView);
+            holder.priceTextView = convertView.findViewById(R.id.price_textView);
             holder.foodImageView = convertView.findViewById(R.id.food_image_view);
             holder.postsEditText = convertView.findViewById(R.id.postsEditText);
             convertView.setTag(holder);
@@ -57,6 +61,12 @@ public class GrapeAdpater extends BaseAdapter{
         }
         SubmitPosts post = (SubmitPosts) getItem(position);
         TextView homeItemTextView = holder.homeItemTextView;
+        TextView foodTextView = holder.foodTextView;
+        TextView priceTextView = holder.priceTextView;
+        ImageView foodImageView = holder.foodImageView;
+        homeItemTextView.setText(post.post);
+        foodTextView.setText(post.whatEat);
+        priceTextView.setText(post.price);
         EditText postsEditText = holder.postsEditText;
 
         //homeItemTextView.setText(post.postThing);
@@ -66,7 +76,7 @@ public class GrapeAdpater extends BaseAdapter{
     private static class ViewHolder{
         public TextView homeItemTextView;
         public TextView foodTextView;
-        public TextView PriceTextView;
+        public TextView priceTextView;
         public ImageView foodImageView;
         public EditText postsEditText;
     }
